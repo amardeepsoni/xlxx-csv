@@ -15,7 +15,7 @@ static =[
         "teacher_email", "teacher_mobile", "policyID", "password", "tname", "team_state"
 ]
 
-NUM = 600
+NUM = 509
 
 length = len(static)
 
@@ -49,7 +49,7 @@ with open('matha.csv', 'r') as csvfile:
         data[3] = row[2]
 
         data[4] = row[0]
-        data[5] = row[5]
+        data[5] = ' '.join(row[5].split(','))
         data[6] = row[6]
         data[7] = row[7]
         data[8] = row[8]
