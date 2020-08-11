@@ -71,7 +71,7 @@ with open('matha.csv', 'r') as csvfile:
         
         data[16] = '2020POLICY'+randteam()
         data[17] = data[1].split()[0].lower() + '@123'
-        data[18] = 'PolicyTest'+ str(NUM) + str(amba)
+        data[18] = 'PolicyTest'+ str(NUM + amba)
         data[19] = row[13]
         print(data)
         amba += 1
