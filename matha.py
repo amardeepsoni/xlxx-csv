@@ -10,7 +10,7 @@ except Excetpion as e:
 static =[
 
         "timestamp", "team_leader_name", "team_leader_email", "team_leader_mobile", 
-        "org_name,member2_name", "member2_email", "member3_name", "member3_email", 
+        "org_name", "member2_name", "member2_email", "member3_name", "member3_email", 
         "member4_name", "member4_email", "member5_name", "member5_email", "teacher_name", 
         "teacher_email", "teacher_mobile", "policyID", "password", "tname", "team_state"
 ]
