@@ -15,14 +15,14 @@ static =[
         "teacher_email", "teacher_mobile", "policyID", "password", "tname", "team_state"
 ]
 
-NUM = 560
+NUM = 600
 
 length = len(static)
 
 with open('final.csv', 'a') as csvw:
             writer = csv.writer(csvw, delimiter=',')
             writer.writerow(static)
-
+            writer.writerow([])
 
 
 def randteam():
@@ -69,9 +69,9 @@ with open('matha.csv', 'r') as csvfile:
         data[14] = ''
         data[15] = ''
         
-        data[16] = '2020POLICY'+randteam()
+        data[16] = '2020POLICYIRSC'+ str(NUM + amba)
         data[17] = data[1].split()[0].lower() + '@123'
-        data[18] = 'PolicyTest'+ str(NUM + amba)
+        data[18] = 'PolicyTeam'+ str(NUM + amba)
         data[19] = row[13]
         print(data)
         amba += 1
