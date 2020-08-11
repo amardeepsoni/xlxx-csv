@@ -25,13 +25,6 @@ with open('final.csv', 'a') as csvw:
             writer.writerow([])
 
 
-def randteam():
-    alpha = 'abcdefghijklmnopqrstuvwxyz'.upper()
-    ALPHA_NUM = list('0123456789'+ alpha)
-    a = ''
-    for i in range(6):
-        a += random.choice(ALPHA_NUM)
-    return a
 
 amba = 0
 with open('matha.csv', 'r') as csvfile:
@@ -41,7 +34,7 @@ with open('matha.csv', 'r') as csvfile:
         temp += 1  # Counter
         if temp == 2: 
             continue
-        con = len(filter(lambda x: x!='', row))
+        con = len(list(filter(lambda x: x!='', row)))
 
         if con == 1:
             continue
