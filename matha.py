@@ -22,7 +22,6 @@ length = len(static)
 with open('final.csv', 'a') as csvw:
             writer = csv.writer(csvw, delimiter=',')
             writer.writerow(static)
-            writer.writerow([])
 
 
 
@@ -44,28 +43,28 @@ with open('matha.csv', 'r') as csvfile:
         print('\n')
         data = [0]*length
         data[0] = ''
-        data[1] = row[1]
-        data[2] = row[4]
-        data[3] = row[2]
+        data[1] = row[1].strip()
+        data[2] = row[4].strip()
+        data[3] = row[2].strip()
 
-        data[4] = ' '.join(row[0].split(','))
-        data[5] = row[5]
-        data[6] = row[6]
-        data[7] = row[7]
-        data[8] = row[8]
-        data[9] = row[9]
-        data[10] = row[10]
-        data[11] = row[11]
-        data[12] = row[12]
+        data[4] = ' '.join(row[0].split(',')).strip()
+        data[5] = row[5].strip()
+        data[6] = row[6].strip()
+        data[7] = row[7].strip()
+        data[8] = row[8].strip()
+        data[9] = row[9].strip()
+        data[10] = row[10].strip()
+        data[11] = row[11].strip()
+        data[12] = row[12].strip()
         
         data[13] = ''
         data[14] = ''
         data[15] = ''
         
-        data[16] = '2020POLICYIRSC'+ str(NUM + amba)
-        data[17] = data[1].split()[0].lower() + '@123'
-        data[18] = 'PolicyTeam'+ str(NUM + amba)
-        data[19] = row[13]
+        data[16] = '2020POLICYIRSC'+ str(NUM + amba).strip()
+        data[17] = (data[1].split()[0].lower() + '@123').strip()
+        data[18] = ('PolicyTeam'+ str(NUM + amba)).strip()
+        data[19] = row[13].strip()
         print(data[4])
         amba += 1
 
