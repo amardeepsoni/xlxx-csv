@@ -48,8 +48,8 @@ with open('matha.csv', 'r') as csvfile:
         data[2] = row[4]
         data[3] = row[2]
 
-        data[4] = row[0]
-        data[5] = ' '.join(row[5].split(','))
+        data[4] = ' '.join(row[0].split(','))
+        data[5] = row[5]
         data[6] = row[6]
         data[7] = row[7]
         data[8] = row[8]
@@ -66,7 +66,7 @@ with open('matha.csv', 'r') as csvfile:
         data[17] = data[1].split()[0].lower() + '@123'
         data[18] = 'PolicyTeam'+ str(NUM + amba)
         data[19] = row[13]
-        print(data)
+        print(data[4])
         amba += 1
 
         with open('final.csv', 'a') as csvw:
