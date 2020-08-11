@@ -1,6 +1,6 @@
 # Convert Into Csv Of Desired Columns
 
-### instruntion to be followed
+### instruction to be followed
 * convert xlsx to csv file 
 * name it as 'matha.csv'
 * run the script
