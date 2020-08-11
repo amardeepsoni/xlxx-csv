@@ -63,14 +63,16 @@ with open('matha.csv', 'r') as csvfile:
         data[9] = row[9]
         data[10] = row[10]
         data[11] = row[11]
+        data[12] = row[12]
         
-        data[12] = ''
         data[13] = ''
         data[14] = ''
-        data[15] = '2020POLICY'+randteam()
-        data[16] = data[1].split()[0].lower() + '@123'
-        data[17] = 'PolicyTest'+ str(NUM) + str(amba)
-        data[18] = row[13]
+        data[15] = ''
+        
+        data[16] = '2020POLICY'+randteam()
+        data[17] = data[1].split()[0].lower() + '@123'
+        data[18] = 'PolicyTest'+ str(NUM) + str(amba)
+        data[19] = row[13]
         print(data)
         amba += 1
 
